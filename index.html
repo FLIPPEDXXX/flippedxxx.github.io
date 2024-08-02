@@ -55,7 +55,7 @@
 			
 				<li><a href="/">首页</a></li>
 	        
-				<li><a href="/tags/LIFE/">LIFE</a></li>
+				<li><a href="/tags/%E7%94%9F%E6%B4%BB/">生活里的小碎片</a></li>
 	        
 			</ul>
 		</nav>
@@ -135,7 +135,7 @@
 				
 					<li style="width: 50%"><a href="/">首页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/LIFE/">LIFE</a></li>
+					<li style="width: 50%"><a href="/tags/%E7%94%9F%E6%B4%BB/">生活里的小碎片</a></li>
 		        
 				</ul>
 			</nav>
@@ -188,6 +188,10 @@
         
       
 
+		
+		
+		  <div hidden="hidden"></div>
+		
       
     </div>
     <div class="article-info article-info-index">
@@ -198,7 +202,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">LIFE</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">生活</a>
         		</li>
       		
 		</ul>
@@ -265,7 +269,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: true
+		showTags: false
 	}
 </script>
 
@@ -348,7 +352,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">LIFE</a>
+                <a href="javascript:void(0)" class="js-tag color3">生活</a>
               </li>
             
             <div class="clearfix"></div>
@@ -431,7 +435,19 @@ MathJax.Hub.Queue(function() {
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap">
+				<div style="display:;">
+					<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
+					<p style="margin:0 20px 0 20px;">
+						<span id="lwlhitokoto">
+							<script>
+								lwlhitokoto();
+							</script>
+						</span>
+					</p>
+					<p id="js-aboutme" style="margin:0 20px 0 20px;">&lt;p&gt;&lt;center&gt;&lt;em&gt;薛宇辰的个人博客。&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;&lt;p&gt;&lt;center&gt;&lt;em&gt;Wechat:_13012300186。&lt;/em&gt;&lt;/center&gt;&lt;/p&gt;</P>
+				</div>
+			</div>
   	  	
     	</section>
     
