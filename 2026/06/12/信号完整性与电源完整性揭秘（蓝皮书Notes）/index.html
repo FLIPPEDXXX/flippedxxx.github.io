@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
 	<link rel="preconnect" href="//gravatar.loli.net">
 
-	<title>NTU全过程Timeline | Flippedx_</title>
+	<title>信号完整性与电源完整性揭秘(蓝皮书Notes) | Flippedx_</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -41,14 +41,14 @@
 
 	<meta property="og:site_name" content="Flippedx_">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="NTU全过程Timeline | Flippedx_">
+	<meta property="og:title" content="信号完整性与电源完整性揭秘(蓝皮书Notes) | Flippedx_">
 	<meta property="og:description" content="">
-	<meta property="og:url" content="https://flippedxxx.github.io/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/">
+	<meta property="og:url" content="https://flippedxxx.github.io/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/">
 
 	
-	<meta property="article:published_time" content="2026-06-07T07:06:00+08:00"> 
+	<meta property="article:published_time" content="2026-06-11T22:06:00+08:00"> 
 	<meta property="article:author" content="Xue Yuchen">
-	<meta property="article:published_first" content="Flippedx_, /2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/">
+	<meta property="article:published_first" content="Flippedx_, /2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/">
 	
 
 	
@@ -60,7 +60,119 @@
 	
 	
 	
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body class="post-template">
 	<div class="site-wrapper">
@@ -126,85 +238,63 @@
     <div class="inner">
         <header class="post-full-header">
             <div class="post-full-meta">
-                <time class="post-full-meta-date" datetime="2026-06-07T07:43:15.000Z">
-                    2026-06-7
+                <time class="post-full-meta-date" datetime="2026-06-11T22:56:12.000Z">
+                    2026-06-11
                 </time>
                 
                 <span class="date-divider">/</span>
                 
-                <a href="/categories/%E5%85%B6%E4%BB%96/">其他</a>&nbsp;&nbsp;
+                <a href="/categories/Board-level-SI-PI/">Board-level SI/PI</a>&nbsp;&nbsp;
                 
                 
             </div>
-            <h1 class="post-full-title">NTU全过程Timeline</h1>
+            <h1 class="post-full-title">信号完整性与电源完整性揭秘(蓝皮书Notes)</h1>
         </header>
         <div class="post-full ">
             
-            <figure class="post-full-image" style="background-image: url(https://files.seeusercontent.com/2026/05/16/Z0hh/IMG_4015.jpg)">
+            <figure class="post-full-image" style="background-image: url(https://i.postimg.cc/qBcbL2Pq/IMG-4013.png)">
             </figure>
             
             <div class="post-full-content">
                 <article id="photoswipe" class="markdown-body">
                     <blockquote>
-<p>此Timeline为<strong>26fall</strong>(August Intake)</p>
+<p>前8单元为goodnotes。</p>
 </blockquote>
-<h2 id="赴新前202605-202607">赴新前（2026/05-2026/07）</h2>
-<blockquote>
-IMPORTANT DATES
+<h2 id="信号完整性与电源完整性揭秘蓝皮书notes">信号完整性与电源完整性揭秘（蓝皮书Notes）</h2>
 <div data-align="center">
-<p><img class="post-img b-lazy" data-img="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/IMP_DATES.jpg" data-index="0" data-src="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/IMP_DATES.jpg"></p>
+<p><img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn1.jpg" data-index="0" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn1.jpg"></p>
+</div>
+&nbsp;
+<div data-align="center">
+<p><img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn2.jpg" data-index="1" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn2.jpg"></p>
+</div>
+&nbsp;
+<div data-align="center">
+<p><img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn3.jpg" data-index="2" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn3.jpg"></p>
+</div>
+&nbsp;
+<div data-align="center">
+<p><img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn4.jpg" data-index="3" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn4.jpg"></p>
+</div>
+&nbsp;
+<div data-align="center">
+<p><img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn5.jpg" data-index="4" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn5.jpg"></p>
+</div>
+&nbsp;
+<div data-align="center">
+<p><img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn6.jpg" data-index="5" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn6.jpg"></p>
 </div>
 <p>&nbsp;</p>
-</blockquote>
-<ul>
-<li><p>提交Student Pass（6.1后）</p>
-<p>1、提交eForm与相关文件换取In-Principle
-Approval(IPA)，入境后获得短期访问通行证，须在有效期内完成COF才可得到最终STP。</p>
-<p>2、上传体检报告至ICA与Make
-Payment，保留相关缴费依据以便后续OSE手续。</p>
-<p>3、预约校内OSE，完成STP最后步骤。</p></li>
-<li><p>体检（国内Raffles医院/诊所，6.1后）</p></li>
-<li><p>E-Verification（5.12后）</p>
-<p>需要提交的材料：正式的学位证书、最终成绩单、学信网验证报告、奖学金证明、最近的护照。（所有均需提供English_Transcript）</p></li>
-<li><p>在线注册Matriculation（7.7-7.13，
-<strong>重要！！</strong>）</p></li>
-<li><p>注册网络账户与Microsoft邮箱（完成2FA验证）✅</p>
-<p>1、网络账户为Network Account。</p>
-<p>2、邮箱为e.ntu.edu.sg。</p></li>
-<li><p>机票与报名接机服务</p>
-<p>1、在5月左右购买新航（SG Airlines）的学生票，享行李额40kg。</p>
-<p>2、报名EEE学院的airport pickup服务（7.29-7.31）。</p>
-<p>3、入境前三天填写新加坡入境卡。</p></li>
-<li><p>抽宿舍与租房(合同与印花税)</p>
-<p>1、与房东签署Tenancy Agreement并让其代缴Stamp Duty（印花税）。</p>
-<p>2、凭印花税线上办理DBS银行卡。</p></li>
-<li><p>银行卡与缴费</p>
-<p>1、中行狮城卡国内预开户+新加坡取卡。</p>
-<p>2、中行卓隽visa信用卡每月交学费有返现。</p>
-<p>3、补齐学费可用渣打银行。</p>
-<p>4、日常消费主场景:渣打ApplePay（1%返现）、微信支付宝境外优惠、卓隽visa
-ApplePay、Paynow。</p>
-<p>5、中大额转账存钱：DBS-Multiplier、中行狮城（中转站）。</p></li>
-<li><p>Orientation（8.5）</p></li>
-<li><p>记得带的东西</p>
-<p>1、合规的计算器（CASIO）</p>
-<p>2、英标充电器转换头</p>
-<p>3、电话卡针</p></li>
-<li><p>Dissertation套磁</p></li>
-</ul>
-<blockquote>
-NTU Calendar
-<div data-align="center">
-<p><img class="post-img b-lazy" data-img="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/Calendar.jpg" data-index="1" data-src="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/Calendar.jpg"></p>
-</div>
-<p>&nbsp;</p>
-</blockquote>
 
                 </article>
                 <ul class="tags-postTags">
                     
                     <li>
-                        <a href="/tags/NTU/" rel="tag"># NTU</a>
+                        <a href="/tags/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/" rel="tag"># 信号完整性</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7/" rel="tag"># 电源完整性</a>
                     </li>
                     
                 </ul>
@@ -215,14 +305,10 @@ NTU Calendar
     
     <nav id="gobottom" class="pagination">
         
-        <a class="prev-post" title="信号完整性与电源完整性揭秘(蓝皮书Notes)" href="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/">
-            ← 信号完整性与电源完整性揭秘(蓝皮书Notes)
-        </a>
-        
         <span class="prev-next-post">·</span>
         
-        <a class="next-post" title="数模国赛23A：定日镜场" href="/2024/08/14/%E6%95%B0%E6%A8%A1%E5%9B%BD%E8%B5%9B23A%EF%BC%9A%E5%AE%9A%E6%97%A5%E9%95%9C%E5%9C%BA/">
-            数模国赛23A：定日镜场 →
+        <a class="next-post" title="NTU全过程Timeline" href="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/">
+            NTU全过程Timeline →
         </a>
         
     </nav>
@@ -248,7 +334,7 @@ NTU Calendar
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B4%E6%96%B0%E5%89%8D202605-202607"><span class="toc-text">赴新前（2026/05-2026/07）</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%E8%93%9D%E7%9A%AE%E4%B9%A6notes"><span class="toc-text">信号完整性与电源完整性揭秘（蓝皮书Notes）</span></a></li></ol>
     </div>
 </div>
 
