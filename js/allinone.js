@@ -1065,3 +1065,80 @@ var initPagePhotoSwipe = function () {
 }
 
 initPagePhotoSwipe()
+
+// MathJax configuration and initialization
+if (typeof MathJax !== 'undefined') {
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true,
+            processEnvironments: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            ignoreClass: ".*|",
+            processClass: "mathjax"
+        },
+        showProcessingMessages: false,
+        messageStyle: "none",
+        showMathMenu: false,
+       jax: ["input/TeX", "output/CommonHTML"],
+        extensions: ["tex2jax.js"],
+        displayAlign: "center",
+        "HTML-CSS": {
+            availableFonts: ["STIX", "TeX"],
+            preferredFont: "STIX",
+            webFont: "STIX-Web",
+            imageFont: null
+        }
+    });
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+}
+
+// MathJax script loading
+function loadMathJax() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = function() {
+        if (typeof MathJax !== 'undefined') {
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                    processEscapes: true,
+                    processEnvironments: true,
+                    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                    ignoreClass: ".*|",
+                    processClass: "mathjax"
+                },
+                showProcessingMessages: false,
+                messageStyle: "none",
+                showMathMenu: false,
+                jax: ["input/TeX", "output/CommonHTML"],
+                extensions: ["tex2jax.js"],
+                displayAlign: "center",
+                "HTML-CSS": {
+                    availableFonts: ["STIX", "TeX"],
+                    preferredFont: "STIX",
+                    webFont: "STIX-Web",
+                    imageFont: null
+                }
+            });
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+        }
+    };
+
+    script.onerror = function() {
+        console.error('MathJax failed to load');
+    };
+}
+
+// Check if MathJax is already loaded, if not load it
+if (typeof MathJax === 'undefined') {
+    loadMathJax();
+} else {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+}
