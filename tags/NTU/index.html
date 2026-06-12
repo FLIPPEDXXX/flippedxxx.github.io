@@ -52,7 +52,7 @@
 
 	
 	
-	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120901">
+	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120920">
 
 	
 	
@@ -341,22 +341,30 @@
 
 
 <script>
-    document.getElementById('scriptLoad').addEventListener('load', function () {
-        
-        
-            var bLazy = new Blazy();
-        
+    (function() {
+        var el = document.getElementById('scriptLoad');
+        var run = function() {
+            
+            
+                var bLazy = new Blazy();
+            
 
-        
-        
+            
+            
 
-        
-        
-        
-            searchFuncSW("/");
-        
-        
-    })
+            
+            
+            
+                searchFuncSW("/");
+            
+            
+        };
+        if (el.complete || (el.readyState && el.readyState !== 'loading')) {
+            run();
+        } else {
+            el.addEventListener('load', run);
+        }
+    })();
 </script>
 
 
