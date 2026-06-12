@@ -56,7 +56,7 @@
 
 	
 	
-	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120855">
+	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120901">
 
 	
 	
@@ -146,34 +146,40 @@
             
             <div class="post-full-content">
                 <article id="photoswipe" class="markdown-body">
-                    <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>$\LaTeX$编译器可以在VS Code本地化部署，也可以采用Overleaf在线平台。官网：<a target="_blank" rel="noopener" href="https://www.overleaf.com/">https://www.overleaf.com/</a>，注册登录即可。  </p>
-<h2 id="LaTeX-布局"><a href="#LaTeX-布局" class="headerlink" title="$\LaTeX$布局"></a>$\LaTeX$布局</h2><p>$\LaTeX$是一个通过写代码来对文章进行排版编辑的工具。它分为<strong>导言区</strong>+<strong>正文</strong>。  </p>
+                    <h2 id="环境">环境</h2>
+<p>$\LaTeX$编译器可以在VS Code本地化部署，也可以采用Overleaf在线平台。官网：<a target="_blank" rel="noopener" href="https://www.overleaf.com/">https://www.overleaf.com/</a>，注册登录即可。</p>
+<h2 id="LaTeX-布局">$\LaTeX$布局</h2>
+<p>$\LaTeX$是一个通过写代码来对文章进行排版编辑的工具。它分为<strong>导言区</strong>+<strong>正文</strong>。</p>
 <ul>
-<li><p>导言区  </p>
+<li>
+<p>导言区</p>
 <ol>
 <li>首先是文章的声明：</li>
 </ol>
 <figure class="highlight latex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>[UTF8]{ctexart}</span><br></pre></td></tr></tbody></table></figure>
-<p>文章编码：UF8。文章类型：中文。  </p>
+<p>文章编码：UF8。文章类型：中文。</p>
 <ol start="2">
 <li>然后导入所有的宏包：</li>
 </ol>
 <figure class="highlight latex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>{mathtools,wallpaper}</span><br><span class="line"><span class="keyword">\usepackage</span>{t1enc}</span><br><span class="line"><span class="keyword">\usepackage</span>{pagecolor}</span><br></pre></td></tr></tbody></table></figure>
-<p>这些都是你在文章中所需要的工具包或者插件。  </p>
+<p>这些都是你在文章中所需要的工具包或者插件。</p>
 <ol start="3">
 <li>然后是文章标题与日期：</li>
 </ol>
-<figure class="highlight latex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\title</span>{论文标题} </span><br><span class="line"><span class="keyword">\date</span>{} <span class="comment">%不显示日期</span></span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight latex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\title</span>{论文标题} </span><br><span class="line"><span class="keyword">\date</span>{} <span class="comment">%不显示日期</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
 </ul>
 <ul>
 <li>正文</li>
 </ul>
   <figure class="highlight latex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">\begin</span>{document}</span><br><span class="line">文章</span><br><span class="line"> <span class="keyword">\end</span>{document}</span><br></pre></td></tr></tbody></table></figure>
-<p>  文章主体都要写在这个框架之内。</p>
+<p>文章主体都要写在这个框架之内。</p>
 <ul>
-<li><code>\maketitle</code><br>  <code>\maketitle</code>一定要加上，并且是在<code>\begin{document}</code>的后面，否则会有语法错误。</li>
+<li><code>\maketitle</code><br>
+<code>\maketitle</code>一定要加上，并且是在<code>\begin{document}</code>的后面，否则会有语法错误。</li>
 </ul>
-<h2 id="LaTeX-内容"><a href="#LaTeX-内容" class="headerlink" title="$\LaTeX$内容"></a>$\LaTeX$内容</h2><ul>
+<h2 id="LaTeX-内容">$\LaTeX$内容</h2>
+<ul>
 <li>各级标题</li>
 </ul>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\section</span>{}</span><br><span class="line"><span class="keyword">\subsection</span>{}</span><br><span class="line"><span class="keyword">\subsubsection</span>{}</span><br><span class="line"><span class="keyword">\paragraph</span>{}</span><br><span class="line"><span class="keyword">\subparagraph</span>{}</span><br></pre></td></tr></tbody></table></figure>
@@ -182,17 +188,19 @@
 <li>列表</li>
 </ul>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>{enumerate}</span><br><span class="line"><span class="keyword">\item</span> 第一条</span><br><span class="line"><span class="keyword">\item</span> 第二条</span><br><span class="line"><span class="keyword">\item</span> 第三条</span><br><span class="line"><span class="keyword">\end</span>{enumerate}</span><br></pre></td></tr></tbody></table></figure>
-<p>这是有序列表的代码。  </p>
+<p>这是有序列表的代码。</p>
 <ul>
 <li>字体<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">{<span class="keyword">\normalsize</span>  }</span><br><span class="line">{<span class="keyword">\large</span>  }  <span class="comment">% 通常这个对应“小四”号字体</span></span><br><span class="line">{<span class="keyword">\Large</span>  }</span><br><span class="line">{<span class="keyword">\LARGE</span>  }</span><br><span class="line">{<span class="keyword">\huge</span>  }</span><br><span class="line">{<span class="keyword">\Huge</span>  }</span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">{<span class="keyword">\songti</span>  }  <span class="comment">% 宋体</span></span><br><span class="line">{<span class="keyword">\heiti</span>  }  <span class="comment">% 黑体</span></span><br><span class="line">{<span class="keyword">\fangsong</span>  }  <span class="comment">% 仿宋</span></span><br></pre></td></tr></tbody></table></figure>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{<span class="keyword">\bf</span>  }  <span class="comment">% 粗体</span></span><br><span class="line">{<span class="keyword">\it</span>  }  <span class="comment">% 斜体</span></span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">{<span class="keyword">\bf</span>  }  <span class="comment">% 粗体</span></span><br><span class="line">{<span class="keyword">\it</span>  }  <span class="comment">% 斜体</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
 </ul>
 <blockquote>
 <p>贴一个：<a target="_blank" rel="noopener" href="https://levitate-qian.github.io/2020/08/30/latex-code/">论文常用LaTeX代码</a>。</p>
 </blockquote>
 <ul>
-<li><p>表格</p>
+<li>
+<p>表格</p>
 <ul>
 <li>基础的三线表（三条线一样粗）</li>
 </ul>
@@ -201,22 +209,20 @@
 <li>三线表2</li>
 </ul>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>{center}</span><br><span class="line"><span class="comment">% 导言区</span></span><br><span class="line"><span class="comment">% \usepackage{booktabs}</span></span><br><span class="line"><span class="keyword">\begin</span>{tabular}{ccccc}</span><br><span class="line"><span class="keyword">\toprule</span></span><br><span class="line">序号 <span class="built_in">&amp;</span> 性别 <span class="built_in">&amp;</span> 年龄 <span class="built_in">&amp;</span> 身高/cm<span class="built_in">&amp;</span> 体重/kg<span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\midrule</span></span><br><span class="line">1 <span class="built_in">&amp;</span> F <span class="built_in">&amp;</span> 14 <span class="built_in">&amp;</span> 156 <span class="built_in">&amp;</span> 42 <span class="keyword">\\</span></span><br><span class="line">2 <span class="built_in">&amp;</span> F <span class="built_in">&amp;</span> 16 <span class="built_in">&amp;</span> 158 <span class="built_in">&amp;</span> 45 <span class="keyword">\\</span></span><br><span class="line">3 <span class="built_in">&amp;</span> M <span class="built_in">&amp;</span> 14 <span class="built_in">&amp;</span> 162 <span class="built_in">&amp;</span> 48 <span class="keyword">\\</span></span><br><span class="line">4 <span class="built_in">&amp;</span> M <span class="built_in">&amp;</span> 15 <span class="built_in">&amp;</span> 163 <span class="built_in">&amp;</span> 50 <span class="keyword">\\</span></span><br><span class="line"><span class="keyword">\bottomrule</span></span><br><span class="line"><span class="keyword">\end</span>{tabular}</span><br><span class="line"><span class="keyword">\end</span>{center}</span><br></pre></td></tr></tbody></table></figure>
-
 <ul>
 <li>基础表格（用tabular实现）</li>
 </ul>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>{table}[!htbp]</span><br><span class="line">    <span class="keyword">\begin</span>{center}</span><br><span class="line">    <span class="keyword">\caption</span>{Grey prediction accuracy registration}</span><br><span class="line">    <span class="keyword">\begin</span>{tabular}{c|ccccccc}</span><br><span class="line">        <span class="keyword">\toprule</span></span><br><span class="line">        <span class="keyword">\textbf</span>{Year}   <span class="built_in">&amp;</span>2011 <span class="built_in">&amp;</span>2012 <span class="built_in">&amp;</span>2013 <span class="built_in">&amp;</span>2014 <span class="built_in">&amp;</span>2015 <span class="built_in">&amp;</span>2016 <span class="built_in">&amp;</span>2017<span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\midrule</span></span><br><span class="line">        <span class="keyword">\textbf</span>{EV Amount} <span class="built_in">&amp;</span> 1000<span class="built_in">&amp;</span> 1800<span class="built_in">&amp;</span> 3000<span class="built_in">&amp;</span>5000<span class="built_in">&amp;</span>8000<span class="built_in">&amp;</span>15000<span class="built_in">&amp;</span>20000 <span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\bottomrule</span></span><br><span class="line">    <span class="keyword">\end</span>{tabular}<span class="keyword">\label</span>{tb:Gray<span class="built_in">_</span>Prediction}</span><br><span class="line">    <span class="keyword">\end</span>{center}</span><br><span class="line"><span class="keyword">\end</span>{table}</span><br></pre></td></tr></tbody></table></figure>
-
 <ul>
 <li>定宽表（常用）</li>
 </ul>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>{table}[!ht]</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\caption</span>{问题一年平均光学效率及功率表}</span><br><span class="line">    <span class="keyword">\resizebox</span>{<span class="keyword">\linewidth</span>}{!}{</span><br><span class="line">    <span class="keyword">\begin</span>{tabular}{|l|l|l|l|l|l|}</span><br><span class="line">    <span class="keyword">\hline</span></span><br><span class="line">        年平均光学效率 <span class="built_in">&amp;</span> 年平均余弦效率 <span class="built_in">&amp;</span> 年平均阴影遮挡效率 <span class="built_in">&amp;</span> 年平均截断效率 <span class="built_in">&amp;</span> 年平均输出热功率 (MW) <span class="built_in">&amp;</span> 单位面积镜面年平均 输出热功率 (kW/m2 ) <span class="keyword">\\</span> <span class="keyword">\hline</span></span><br><span class="line">        0.6066 <span class="built_in">&amp;</span> 0.8112 <span class="built_in">&amp;</span> 0.9297 <span class="built_in">&amp;</span> 0.9073 <span class="built_in">&amp;</span> 41.273 <span class="built_in">&amp;</span> 0.5326 <span class="keyword">\\</span> <span class="keyword">\hline</span></span><br><span class="line">    <span class="keyword">\end</span>{tabular}</span><br><span class="line">    }</span><br><span class="line"><span class="keyword">\end</span>{table}</span><br></pre></td></tr></tbody></table></figure>
 </li>
-<li><p>图片</p>
+<li>
+<p>图片</p>
 </li>
 </ul>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">\begin</span>{figure}[htbp]</span><br><span class="line">	    <span class="keyword">\centering</span></span><br><span class="line">	    <span class="keyword">\includegraphics</span>[width=0.4<span class="keyword">\linewidth</span>]{坐标示意图}</span><br><span class="line">	    <span class="keyword">\caption</span>{地平坐标线示意图}</span><br><span class="line">	    <span class="keyword">\label</span>{fig:enter-label}</span><br><span class="line">	<span class="keyword">\end</span>{figure}</span><br></pre></td></tr></tbody></table></figure>
-
 <blockquote>
 <p>西电毕设$\LaTeX$模板:<a target="_blank" rel="noopener" href="https://github.com/note286/xduts">https://github.com/note286/xduts</a></p>
 </blockquote>
@@ -385,6 +391,11 @@
 			<a href="/" title="Xue Yuchen's Blog">Xue Yuchen's Blog © 2022-2026</a>
 			
 				
+			        <span hidden="true" id="/latex-notes/" class="leancloud-visitors" data-flag-title="LaTeX札记">
+			            <span>阅读量 </span>
+			            <span class="leancloud-visitors-count">0</span>
+			        </span>
+	    		
     		
 		</div>
 		<nav class="site-footer-nav">
@@ -459,7 +470,7 @@
 
 
 
-<script id="valineScript" src="//unpkg.com/valine/dist/Valine.min.js" async=""></script>
+<script id="valineScript" src="https://unpkg.com/valine/dist/Valine.min.js" async=""></script>
 <script>
     document.getElementById('valineScript').addEventListener("load", function() {
         new Valine({
@@ -468,10 +479,10 @@
             notify: false,
             appId: 'aBRltWkLKGNezPSGs1TBA0GE-gzGzoHsz',
             appKey: 'Tg0cJFUAcAbzFVaO5hwaRXsx',
-            placeholder: '有哪个宝宝要发言~',
+            placeholder: '这里是评论区。',
             pageSize: 10,
             avatar: 'mm',
-            visitor: 
+            visitor: true
         })
     });
 </script>
