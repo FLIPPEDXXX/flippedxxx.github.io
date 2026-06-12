@@ -399,8 +399,17 @@
 @media (max-width: 768px) {
     .timeline::before { left: 18px; transform: none; }
     .timeline-year { text-align: left; padding-left: 48px; }
-    .timeline-row { grid-template-columns: 40px 1fr; display: block; margin: 0 0 1.5em 40px; }
-    .timeline-dot { position: absolute; left: -30px; margin-top: 1.5em; }
+    .timeline-row {
+        display: block;
+        position: relative;
+        margin: 0 0 1.2em 40px;
+    }
+    .timeline-dot {
+        position: absolute;
+        top: 1.5em;
+        left: -29px;
+        margin-top: 0;
+    }
     .timeline-row.left .timeline-card,
     .timeline-row.right .timeline-card { margin: 0; }
     .timeline-end { text-align: left; padding-left: 48px; }
