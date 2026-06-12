@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://flippedxxx.github.io/sitemap.xml
