@@ -1408,7 +1408,3 @@ h6 {
 	.site-footer-content {
 		flex-direction: column;
 	}
-	.site-footer-nav a:first-child {
-		margin-left: 0;
-	}
-}
