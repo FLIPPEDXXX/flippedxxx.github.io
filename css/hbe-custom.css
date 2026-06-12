@@ -1,0 +1,219 @@
+/* ============================================================
+ * 加密页面自定义样式 — 圆润优雅
+ * ============================================================ */
+
+/* --- 容器卡片 --- */
+.hbe-container {
+  max-width: 420px;
+  margin: 2.5em auto;
+  padding: 2.5em 2em 2em;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.04),
+    0 8px 30px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hbe-container:hover {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 12px 40px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+/* --- 表单布局 --- */
+.hbe-form {
+  gap: 0;
+}
+
+/* --- 输入框区域 --- */
+.hbe-input.hbe-input-default {
+  width: 100%;
+  margin: 0 0 0.4em;
+}
+
+/* 覆盖 default 主题的复杂动画，简化为干净圆润风格 */
+.hbe-input-label-default {
+  position: relative !important;
+  text-align: center !important;
+  font-size: 1.05rem !important;
+  color: #8e8e93 !important;
+  padding: 0 !important;
+  margin-bottom: 0.6em;
+  width: 100% !important;
+  pointer-events: auto !important;
+}
+
+.hbe-input-label-default::before,
+.hbe-input-label-default::after {
+  display: none !important;
+}
+
+.hbe-input-label-content-default {
+  padding: 0 !important;
+  transform: none !important;
+  transition: none !important;
+  color: #6e6e73 !important;
+  font-size: 1.05rem !important;
+  font-weight: 500 !important;
+}
+
+/* 输入框 */
+.hbe-input-field-default {
+  position: relative !important;
+  width: 100% !important;
+  float: none !important;
+  opacity: 1 !important;
+  z-index: auto !important;
+  padding: 0.85em 1.1em !important;
+  margin-bottom: 1.2em !important;
+  font-size: 1.15rem !important;
+  color: #1d1d1f !important;
+  background: #f5f5f7 !important;
+  border: 2px solid transparent !important;
+  border-radius: 14px !important;
+  outline: none !important;
+  transition: all 0.25s ease !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+}
+
+.hbe-input-field-default:focus {
+  background: #ffffff !important;
+  border-color: #4d8df0 !important;
+  box-shadow: 0 0 0 4px rgba(77, 141, 240, 0.12) !important;
+}
+
+.hbe-input-field-default::placeholder {
+  color: #c7c7cc;
+}
+
+/* --- 解密按钮 --- */
+.hbe-button {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: auto !important;
+  height: auto !important;
+  padding: 0.85em 0 !important;
+  font-size: 1.15rem !important;
+  font-weight: 600 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #5e8fef 0%, #4d7ce8 100%) !important;
+  border: none !important;
+  border-radius: 14px !important;
+  box-shadow: 0 2px 8px rgba(77, 125, 232, 0.3) !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  text-indent: 0 !important;
+  text-shadow: none !important;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease !important;
+  position: relative !important;
+  top: auto !important;
+  margin: 0 !important;
+}
+
+.hbe-button:hover {
+  background: linear-gradient(135deg, #6d9df5 0%, #5a8af0 100%) !important;
+  box-shadow: 0 4px 16px rgba(77, 125, 232, 0.4) !important;
+  transform: translateY(-1px);
+}
+
+.hbe-button:active {
+  transform: translateY(0) scale(0.98) !important;
+  box-shadow: 0 1px 4px rgba(77, 125, 232, 0.3) !important;
+}
+
+/* 去除 v3 旧按钮的 after 伪元素（三角箭头等） */
+.hbe-button::after {
+  display: none !important;
+}
+
+/* 隐藏按钮（插件控制） */
+.hbe-button-hidden {
+  display: none !important;
+}
+
+/* --- 错误提示 --- */
+.hbe-error {
+  min-height: 1.2em;
+  margin: 0.8em 0 0 !important;
+  padding: 0.6em 1em !important;
+  font-size: 1rem !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  color: #d63333 !important;
+  text-align: center !important;
+  background: transparent !important;
+  border-radius: 10px !important;
+  transition: all 0.25s ease;
+}
+
+.hbe-error:not(:empty) {
+  background: rgba(214, 51, 51, 0.06) !important;
+  border: 1px solid rgba(214, 51, 51, 0.15) !important;
+}
+
+/* --- loading 动画 --- */
+.hbe-button[aria-busy="true"]::after {
+  margin-left: 0.6em !important;
+  width: 1em !important;
+  height: 1em !important;
+  border-width: 2px !important;
+}
+
+@keyframes hbe-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ============================================================
+ * 暗色模式
+ * ============================================================ */
+@media (prefers-color-scheme: dark) {
+  .hbe-container {
+    background: #1c1c1e;
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.2),
+      0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .hbe-container:hover {
+    box-shadow:
+      0 1px 3px rgba(0, 0, 0, 0.3),
+      0 12px 40px rgba(0, 0, 0, 0.4);
+  }
+
+  .hbe-input-label-content-default {
+    color: #98989d !important;
+  }
+
+  .hbe-input-field-default {
+    color: #f5f5f7 !important;
+    background: #2c2c2e !important;
+  }
+
+  .hbe-input-field-default:focus {
+    background: #3a3a3c !important;
+    border-color: #6ba1f5 !important;
+    box-shadow: 0 0 0 4px rgba(107, 161, 245, 0.18) !important;
+  }
+
+  .hbe-button {
+    background: linear-gradient(135deg, #5e8fef 0%, #4d7ce8 100%) !important;
+    box-shadow: 0 2px 8px rgba(77, 141, 240, 0.25) !important;
+  }
+
+  .hbe-button:hover {
+    background: linear-gradient(135deg, #6d9df5 0%, #5a8af0 100%) !important;
+    box-shadow: 0 4px 16px rgba(77, 141, 240, 0.35) !important;
+  }
+
+  .hbe-error {
+    color: #ff6961 !important;
+  }
+
+  .hbe-error:not(:empty) {
+    background: rgba(255, 105, 97, 0.08) !important;
+    border-color: rgba(255, 105, 97, 0.18) !important;
+  }
+}
