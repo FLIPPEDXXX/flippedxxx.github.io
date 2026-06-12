@@ -16,6 +16,7 @@
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 	<meta name="generator" content="hexo">
+		<meta name="google-site-verification" content="Aq6_lMZKMvsAQhLTd_-aExLKJShWrr-i9vOXA-84PVM">
 	<meta name="author" content="Xue Yuchen">
 	<meta name="description" content="">
 
@@ -55,7 +56,7 @@
 
 	
 	
-	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120845">
+	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120849">
 
 	
 	
@@ -145,29 +146,43 @@
             
             <div class="post-full-content">
                 <article id="photoswipe" class="markdown-body">
-                    <h2 id="20240805"><a href="#20240805" class="headerlink" title="20240805"></a>20240805</h2><p>在了解了多个Hexo主题（<em>Casper</em>/<em>Next</em>/<em>Yilia</em>）后,最终还是回到了Casper上。在同时借鉴xzhih版本和Geekmubai版本时发现，它们两个版本间还是有很多各自的优点与缺陷。  </p>
+                    <h2 id="20240805">20240805</h2>
+<p>在了解了多个Hexo主题（<em>Casper</em>/<em>Next</em>/<em>Yilia</em>）后,最终还是回到了Casper上。在同时借鉴xzhih版本和Geekmubai版本时发现，它们两个版本间还是有很多各自的优点与缺陷。</p>
 <ul>
-<li>Valine评论系统不显示<br>暂时不知道问题，关闭Valine。</li>
+<li>Valine评论系统不显示<br>
+暂时不知道问题，关闭Valine。</li>
 </ul>
-<h2 id="20240813"><a href="#20240813" class="headerlink" title="20240813"></a>20240813</h2><p>解决了Hexo上无法显示$\LaTeX$公式的问题。 Hexo上无法对数学公式（$\LaTeX$公式）进行渲染，因为缺乏相应的渲染引擎。</p>
+<h2 id="20240813">20240813</h2>
+<p>解决了Hexo上无法显示$\LaTeX$公式的问题。 Hexo上无法对数学公式（$\LaTeX$公式）进行渲染，因为缺乏相应的渲染引擎。</p>
 <ol>
-<li><p>修改渲染引擎为<code>pandoc</code><br></p><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-math</span><br><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-rendered-pandoc</span><br></pre></td></tr></tbody></table></figure><p></p>
-</li>
-<li><p>安装<code>mathjax</code>插件<br></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mathjax</span><br></pre></td></tr></tbody></table></figure><p></p>
-</li>
-<li><p>Hexo的<code>_config.yml</code>修改。在站点配置文件后添加：<br></p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or 'ams' or 'all'</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line   math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></tbody></table></figure><p></p>
-</li>
-<li><p><code>pandoc</code>的本地安装</p>
-</li>
+<li>修改渲染引擎为<code>pandoc</code></li>
 </ol>
-<p>  在<a target="_blank" rel="noopener" href="https://github.com/jgm/pandoc/releases/tag/3.3">https://github.com/jgm/pandoc/releases/tag/3.3</a>下载。版本为：<strong>pandoc-3.3-windows-x86_64.msi</strong>（一般下这个）。<br>  下载完成后在<code>cmd</code>中输入<code>pandoc -v</code>可验证是否下载完毕。</p>
+<pre><code><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-math</span><br><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-rendered-pandoc</span><br></pre></td></tr></tbody></table></figure>
+</code></pre>
+<ol start="2">
+<li>安装<code>mathjax</code>插件</li>
+</ol>
+<pre><code><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mathjax</span><br></pre></td></tr></tbody></table></figure>
+</code></pre>
+<ol start="3">
+<li>Hexo的<code>_config.yml</code>修改。在站点配置文件后添加：</li>
+</ol>
+<pre><code><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or 'ams' or 'all'</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line   math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></tbody></table></figure>
+</code></pre>
+<ol start="4">
+<li><code>pandoc</code>的本地安装</li>
+</ol>
+<p>在<a target="_blank" rel="noopener" href="https://github.com/jgm/pandoc/releases/tag/3.3">https://github.com/jgm/pandoc/releases/tag/3.3</a>下载。版本为：<strong>pandoc-3.3-windows-x86_64.msi</strong>（一般下这个）。<br>
+下载完成后在<code>cmd</code>中输入<code>pandoc -v</code>可验证是否下载完毕。</p>
 <ol start="5">
 <li>重新生成博客</li>
 </ol>
 <pre><code><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
-<p>  然后发现问题得以解决，Hexo上可正常显示$\LaTeX$公式。在scaffolds的post头文件中添加了<code>mathjax: true</code>。《Hexo+Github博客部署教程》的<code>.md</code>文件格式修改代码块与下一段文字间要空一行。  </p>
-<h2 id="20250117"><a href="#20250117" class="headerlink" title="20250117"></a>20250117</h2><p>  今天可算遇上个大麻烦。太久没登博客发现<code>hexo d</code>的时候居然报错了，随后发现是github里ssh key的权限问题。具体解决方案我参考了这两篇<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_30940783/article/details/99581061?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-7-99581061.142%5Ev101%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_30940783/article/details/99581061?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-7-99581061.142^v101^pc_search_result_base1&amp;spm=1018.2226.3001.4187</a><br>  和<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51376761/article/details/135720179?ops_request_misc=%257B%2522request%255Fid%2522%253A%25222d76abce070bd7864b97e9971a81dc7a%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=2d76abce070bd7864b97e9971a81dc7a&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135720179-null-null.142%5Ev101%5Epc_search_result_base1&amp;utm_term=ssh:%20connect%20to%20host%20github.com%20port%2022:%20Connection%20timed%20out&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_51376761/article/details/135720179?ops_request_misc=%257B%2522request%255Fid%2522%253A%25222d76abce070bd7864b97e9971a81dc7a%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=2d76abce070bd7864b97e9971a81dc7a&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135720179-null-null.142^v101^pc_search_result_base1&amp;utm_term=ssh%3A%20connect%20to%20host%20github.com%20port%2022%3A%20Connection%20timed%20out&amp;spm=1018.2226.3001.4187</a> 。中途我删掉了原先的ssh key然后配置了新的ssh key，弄了半天总算解决了，我原先的.ssh文件夹里根本没有config文件！</p>
+<p>然后发现问题得以解决，Hexo上可正常显示$\LaTeX$公式。在scaffolds的post头文件中添加了<code>mathjax: true</code>。《Hexo+Github博客部署教程》的<code>.md</code>文件格式修改代码块与下一段文字间要空一行。</p>
+<h2 id="20250117">20250117</h2>
+<p>今天可算遇上个大麻烦。太久没登博客发现<code>hexo d</code>的时候居然报错了，随后发现是github里ssh key的权限问题。具体解决方案我参考了这两篇<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_30940783/article/details/99581061?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-7-99581061.142%5Ev101%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_30940783/article/details/99581061?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo博客无法部署到远端&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-7-99581061.142^v101^pc_search_result_base1&amp;spm=1018.2226.3001.4187</a><br>
+和<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51376761/article/details/135720179?ops_request_misc=%257B%2522request%255Fid%2522%253A%25222d76abce070bd7864b97e9971a81dc7a%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=2d76abce070bd7864b97e9971a81dc7a&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135720179-null-null.142%5Ev101%5Epc_search_result_base1&amp;utm_term=ssh%3A%20connect%20to%20host%20github.com%20port%2022%3A%20Connection%20timed%20out&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_51376761/article/details/135720179?ops_request_misc=%257B%2522request%255Fid%2522%253A%25222d76abce070bd7864b97e9971a81dc7a%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=2d76abce070bd7864b97e9971a81dc7a&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135720179-null-null.142^v101^pc_search_result_base1&amp;utm_term=ssh%3A connect to host github.com port 22%3A Connection timed out&amp;spm=1018.2226.3001.4187</a> 。中途我删掉了原先的ssh key然后配置了新的ssh key，弄了半天总算解决了，我原先的.ssh文件夹里根本没有config文件！</p>
 
                 </article>
                 <ul class="tags-postTags">
