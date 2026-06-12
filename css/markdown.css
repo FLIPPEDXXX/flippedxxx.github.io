@@ -108,6 +108,11 @@ em {
     margin: 0.3em 0 !important;
 }
 
+.markdown-body .text-red {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
 .markdown-body a {
     color: #26A8ED;
     font-weight: 600;

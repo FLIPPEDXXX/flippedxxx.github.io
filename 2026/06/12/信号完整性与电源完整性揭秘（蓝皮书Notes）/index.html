@@ -193,7 +193,11 @@
 </div> 
 
 <ul>
-<li>如图为返回电流和到参考平面距离的关系，离参考平面越远，返回电流则越低；离参考平面越近，返回电流越高。例如：<br>$$<br>\begin{gathered}<br>\frac{H_{top}}{H_{bot}}= \frac{4}{1} \cr<br>\frac{I_{return-top}}{I_{return-bot}}= \frac{1}{4}<br>\end{gathered}<br>$$</li>
+<li>如图为返回电流和到参考平面距离的关系，离参考平面越远，返回电流则越低；离参考平面越近，返回电流越高。例如：<script type="math/tex; mode=display">
+\begin{gathered}
+\frac{H_{top}}{H_{bot}}= \frac{4}{1} \cr
+\frac{I_{return-top}}{I_{return-bot}}= \frac{1}{4}
+\end{gathered}</script></li>
 </ul>
 <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
   <div style="flex: 1; text-align: center;">
@@ -205,7 +209,30 @@
 </div>
 
 <ul>
-<li>如图是同层导体返回电流的分布情况，以及右侧有一等线宽走线时各自的电流情况。返回电流主要集中在走线下方的平面，与走线同一层的相同平面返回电流很少。</li>
+<li><p>如图是同层导体返回电流的分布情况，以及右侧有一等线宽走线时各自的电流情况。返回电流主要集中在走线下方的平面，与走线同一层的相同平面返回电流很少。</p>
+</li>
+<li><p>传输线路径包含电磁波传输的物理环境，包括<em>信号路径</em>、<em>参考路径</em> 。</p>
+</li>
+</ul>
+<h3 id="9、传输线延时与模型"><a href="#9、传输线延时与模型" class="headerlink" title="9、传输线延时与模型"></a>9、传输线延时与模型</h3><script type="math/tex; mode=display">
+\begin{gathered}
+v_p = \frac{c_0}{\sqrt{\varepsilon_r}} = \frac{1}{\sqrt{LC}} \cr
+\text{单位长度延时：}\tau _ p = \sqrt {LC}
+\end{gathered}</script><script type="math/tex; mode=display">\text{又}
+\begin{cases}
+\dfrac{c_0}{\sqrt{\varepsilon_r}}=\dfrac{1}{\sqrt{LC}} \cr
+Z_0=\sqrt{\dfrac{L}{C}}
+\end{cases}</script><script type="math/tex; mode=display">\text{则单位长度电容与单位长度电感}
+\begin{cases}
+L=\dfrac{Z_0}{c_0}\sqrt{\varepsilon_r} \cr
+C=\dfrac{1}{c_0 Z_0}\sqrt{\varepsilon_r}
+\end{cases}</script><p>则单位长度电感与单位长度电容只与<strong>走线的特性阻抗和介质的介电常数</strong>有关，而与介质厚度和线宽<span class="text-red">无关</span>。</p>
+<div align="center">
+<img style="width: 40%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/传输线集总参数模型.png" data-index="12" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/传输线集总参数模型.png">
+</div> 
+
+<ul>
+<li>如图是理想传输线的集总参数模型。</li>
 </ul>
 
                 </article>
@@ -217,6 +244,10 @@
                     
                     <li>
                         <a href="/tags/%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7/" rel="tag"># 电源完整性</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/%E9%AB%98%E9%80%9FPCB/" rel="tag"># 高速PCB</a>
                     </li>
                     
                 </ul>
@@ -256,7 +287,7 @@
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89"><span class="toc-text">信号完整性与电源完整性揭秘（蓝皮书Notes）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81%E5%8F%82%E8%80%83%E5%B9%B3%E9%9D%A2%E5%92%8C%E8%BF%94%E5%9B%9E%E7%94%B5%E6%B5%81"><span class="toc-text">8、参考平面和返回电流</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89"><span class="toc-text">信号完整性与电源完整性揭秘（蓝皮书Notes）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81%E5%8F%82%E8%80%83%E5%B9%B3%E9%9D%A2%E5%92%8C%E8%BF%94%E5%9B%9E%E7%94%B5%E6%B5%81"><span class="toc-text">8、参考平面和返回电流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81%E4%BC%A0%E8%BE%93%E7%BA%BF%E5%BB%B6%E6%97%B6%E4%B8%8E%E6%A8%A1%E5%9E%8B"><span class="toc-text">9、传输线延时与模型</span></a></li></ol></li></ol>
     </div>
 </div>
 
@@ -339,7 +370,7 @@
 		<h3 class="read-next-card-header-title">标签云</h3>
 	</header>
 	<div class="read-next-card-content-ext">
-		<a href="/tags/LaTeX/" style="font-size: 14px;">LaTeX</a> <a href="/tags/NTU/" style="font-size: 14px;">NTU</a> <a href="/tags/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/" style="font-size: 14px;">信号完整性</a> <a href="/tags/%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7/" style="font-size: 14px;">电源完整性</a>
+		<a href="/tags/LaTeX/" style="font-size: 14px;">LaTeX</a> <a href="/tags/NTU/" style="font-size: 14px;">NTU</a> <a href="/tags/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/" style="font-size: 14px;">信号完整性</a> <a href="/tags/%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7/" style="font-size: 14px;">电源完整性</a> <a href="/tags/%E9%AB%98%E9%80%9FPCB/" style="font-size: 14px;">高速PCB</a>
 	</div>
 </article>
 
