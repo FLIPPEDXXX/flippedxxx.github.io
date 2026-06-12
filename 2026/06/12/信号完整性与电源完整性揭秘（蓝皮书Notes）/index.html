@@ -11,7 +11,7 @@
 	<link rel="preconnect" href="//9qpuwspm.api.lncld.net">
 	<link rel="preconnect" href="//gravatar.loli.net">
 
-	<title>网站的小问题 | Xue Yuchen's Blog</title>
+	<title>信号完整性与电源完整性揭秘(蓝皮书Notes) | Xue Yuchen's Blog</title>
 
 	<meta name="HandheldFriendly" content="True">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -44,19 +44,19 @@
 
 	<meta property="og:site_name" content="Xue Yuchen's Blog">
 	<meta property="og:type" content="article">
-	<meta property="og:title" content="网站的小问题 | Xue Yuchen's Blog">
+	<meta property="og:title" content="信号完整性与电源完整性揭秘(蓝皮书Notes) | Xue Yuchen's Blog">
 	<meta property="og:description" content="">
-	<meta property="og:url" content="https://flippedxxx.github.io/posts/44d56654.html">
+	<meta property="og:url" content="https://flippedxxx.github.io/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/">
 
 	
-	<meta property="article:published_time" content="2024-08-05T10:08:00+08:00"> 
+	<meta property="article:published_time" content="2026-06-11T22:06:00+08:00"> 
 	<meta property="article:author" content="Xue Yuchen">
-	<meta property="article:published_first" content="Xue Yuchen's Blog, /posts/44d56654.html">
+	<meta property="article:published_first" content="Xue Yuchen's Blog, /2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/">
 	
 
 	
 	
-	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120920">
+	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606120926">
 
 	
 	
@@ -127,65 +127,116 @@
     <div class="inner">
         <header class="post-full-header">
             <div class="post-full-meta">
-                <time class="post-full-meta-date" datetime="2024-08-05T10:06:46.000Z">
-                    2024-08-5
+                <time class="post-full-meta-date" datetime="2026-06-11T22:56:12.000Z">
+                    2026-06-11
                 </time>
                 
                 <span class="date-divider">/</span>
                 
-                <a href="/categories/%E5%85%B6%E4%BB%96/">其他</a>&nbsp;&nbsp;
+                <a href="/categories/Board-level-SI-PI/">Board-level SI/PI</a>&nbsp;&nbsp;
                 
                 
             </div>
-            <h1 class="post-full-title">网站的小问题</h1>
+            <h1 class="post-full-title">信号完整性与电源完整性揭秘(蓝皮书Notes)</h1>
         </header>
         <div class="post-full ">
             
-            <figure class="post-full-image" style="background-image: url(https://s2.loli.net/2024/08/05/UMmuh3ZFxpfBCqn.jpg)">
+            <figure class="post-full-image" style="background-image: url(https://i.postimg.cc/qBcbL2Pq/IMG-4013.png)">
             </figure>
             
             <div class="post-full-content">
                 <article id="photoswipe" class="markdown-body">
-                    <h2 id="20240805">20240805</h2>
-<p>在了解了多个Hexo主题（<em>Casper</em>/<em>Next</em>/<em>Yilia</em>）后,最终还是回到了Casper上。在同时借鉴xzhih版本和Geekmubai版本时发现，它们两个版本间还是有很多各自的优点与缺陷。</p>
+                    <blockquote>
+<p>前7单元为goodnotes。</p>
+</blockquote>
+<h2 id="信号完整性与电源完整性揭秘（蓝皮书Notes）"><a href="#信号完整性与电源完整性揭秘（蓝皮书Notes）" class="headerlink" title="信号完整性与电源完整性揭秘（蓝皮书Notes）"></a>信号完整性与电源完整性揭秘（蓝皮书Notes）</h2><div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn1.jpg" data-index="0" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn1.jpg">
+</div>  
+
+<div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn1.jpg" data-index="1" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn1.jpg">
+</div>  
+
+<div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn2.jpg" data-index="2" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn2.jpg">
+</div>  
+
+<div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn3.jpg" data-index="3" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn3.jpg">
+</div>  
+
+<div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn4.jpg" data-index="4" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn4.jpg">
+</div>  
+
+<div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn5.jpg" data-index="5" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn5.jpg">
+</div>  
+
+<div align="center">
+<img class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn6.jpg" data-index="6" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/gn6.jpg">
+</div>  
+
+<h3 id="8、参考平面和返回电流"><a href="#8、参考平面和返回电流" class="headerlink" title="8、参考平面和返回电流"></a>8、参考平面和返回电流</h3><div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+  <div style="flex: 1; text-align: center;">
+    <img style="width: 90%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/返回电流电磁场分布.png" data-index="7" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/返回电流电磁场分布.png">
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img style="width: 90%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/电流密度分布.png" data-index="8" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/电流密度分布.png">
+  </div>
+</div>
+
 <ul>
-<li>Valine评论系统不显示<br>
-暂时不知道问题，关闭Valine。</li>
+<li>返回电流分布规律为：$i(d)=\frac{I_0}{\pi H}\cdot\frac{1}{1+\left(\frac{d}{H}\right)^2}$。返回电流电磁场分布与电流密度分布如图。</li>
 </ul>
-<h2 id="20240813">20240813</h2>
-<p>解决了Hexo上无法显示$\LaTeX$公式的问题。 Hexo上无法对数学公式（$\LaTeX$公式）进行渲染，因为缺乏相应的渲染引擎。</p>
-<ol>
-<li>修改渲染引擎为<code>pandoc</code></li>
-</ol>
-<pre><code><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm un hexo-math</span><br><span class="line">npm uninstall hexo-rendered-marked</span><br><span class="line">npm install hexo-rendered-pandoc</span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<ol start="2">
-<li>安装<code>mathjax</code>插件</li>
-</ol>
-<pre><code><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mathjax</span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<ol start="3">
-<li>Hexo的<code>_config.yml</code>修改。在站点配置文件后添加：</li>
-</ol>
-<pre><code><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mathjax:</span><br><span class="line">  tags: none # or 'ams' or 'all'</span><br><span class="line">  single_dollars: true # enable single dollar signs as in-line   math delimiters</span><br><span class="line">  cjk_width: 0.9 # relative CJK char width</span><br><span class="line">  normal_width: 0.6 # relative normal (monospace) width</span><br><span class="line">  append_css: true # add CSS to pages rendered by MathJax</span><br><span class="line">  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<ol start="4">
-<li><code>pandoc</code>的本地安装</li>
-</ol>
-<p>在<a target="_blank" rel="noopener" href="https://github.com/jgm/pandoc/releases/tag/3.3">https://github.com/jgm/pandoc/releases/tag/3.3</a>下载。版本为：<strong>pandoc-3.3-windows-x86_64.msi</strong>（一般下这个）。<br>
-下载完成后在<code>cmd</code>中输入<code>pandoc -v</code>可验证是否下载完毕。</p>
-<ol start="5">
-<li>重新生成博客</li>
-</ol>
-<pre><code><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></tbody></table></figure>
-</code></pre>
-<p>然后发现问题得以解决，Hexo上可正常显示$\LaTeX$公式。在scaffolds的post头文件中添加了<code>mathjax: true</code>。《Hexo+Github博客部署教程》的<code>.md</code>文件格式修改代码块与下一段文字间要空一行。</p>
-<h2 id="20250117">20250117</h2>
-<p>今天可算遇上个大麻烦。太久没登博客发现<code>hexo d</code>的时候居然报错了，随后发现是github里ssh key的权限问题。具体解决方案我参考了这两篇<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_30940783/article/details/99581061?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo%E5%8D%9A%E5%AE%A2%E6%97%A0%E6%B3%95%E9%83%A8%E7%BD%B2%E5%88%B0%E8%BF%9C%E7%AB%AF&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-7-99581061.142%5Ev101%5Epc_search_result_base1&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_30940783/article/details/99581061?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=hexo博客无法部署到远端&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-7-99581061.142^v101^pc_search_result_base1&amp;spm=1018.2226.3001.4187</a><br>
-和<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_51376761/article/details/135720179?ops_request_misc=%257B%2522request%255Fid%2522%253A%25222d76abce070bd7864b97e9971a81dc7a%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=2d76abce070bd7864b97e9971a81dc7a&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135720179-null-null.142%5Ev101%5Epc_search_result_base1&amp;utm_term=ssh%3A%20connect%20to%20host%20github.com%20port%2022%3A%20Connection%20timed%20out&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/weixin_51376761/article/details/135720179?ops_request_misc=%257B%2522request%255Fid%2522%253A%25222d76abce070bd7864b97e9971a81dc7a%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=2d76abce070bd7864b97e9971a81dc7a&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-135720179-null-null.142^v101^pc_search_result_base1&amp;utm_term=ssh%3A connect to host github.com port 22%3A Connection timed out&amp;spm=1018.2226.3001.4187</a> 。中途我删掉了原先的ssh key然后配置了新的ssh key，弄了半天总算解决了，我原先的.ssh文件夹里根本没有config文件！</p>
+<div align="center">
+<img style="width: 40%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/返回电流和介质厚度的关系.png" data-index="9" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/返回电流和介质厚度的关系.png">
+</div> 
+
+<ul>
+<li>如图为返回电流和到参考平面距离的关系，离参考平面越远，返回电流则越低；离参考平面越近，返回电流越高。例如：<br>$$<br>\begin{gathered}<br>\frac{H_{top}}{H_{bot}}= \frac{4}{1} \cr<br>\frac{I_{return-top}}{I_{return-bot}}= \frac{1}{4}<br>\end{gathered}<br>$$</li>
+</ul>
+<div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+  <div style="flex: 1; text-align: center;">
+    <img style="width: 90%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/同层导体返回电流.png" data-index="10" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/同层导体返回电流.png">
+  </div>
+  <div style="flex: 1; text-align: center;">
+    <img style="width: 90%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/相邻走线电流.png" data-index="11" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/相邻走线电流.png">
+  </div>
+</div>
+
+<ul>
+<li><p>如图是同层导体返回电流的分布情况，以及右侧有一等线宽走线时各自的电流情况。返回电流主要集中在走线下方的平面，与走线同一层的相同平面返回电流很少。</p>
+</li>
+<li><p>传输线路径包含电磁波传输的物理环境，包括<em>信号路径</em>、<em>参考路径</em> 。</p>
+</li>
+</ul>
+<h3 id="9、传输线延时与模型"><a href="#9、传输线延时与模型" class="headerlink" title="9、传输线延时与模型"></a>9、传输线延时与模型</h3><p>$$<br>\begin{gathered}<br>v_p = \frac{c_0}{\sqrt{\varepsilon_r}} = \frac{1}{\sqrt{LC}} \cr<br>\text{单位长度延时：}\tau _ p = \sqrt {LC}<br>\end{gathered}<br>$$</p>
+<p>$$\text{又}<br>\begin{cases}<br>\dfrac{c_0}{\sqrt{\varepsilon_r}}=\dfrac{1}{\sqrt{LC}} \cr<br>Z_0=\sqrt{\dfrac{L}{C}}<br>\end{cases}<br>$$</p>
+<p>$$\text{则单位长度电容与单位长度电感}<br>\begin{cases}<br>L=\dfrac{Z_0}{c_0}\sqrt{\varepsilon_r} \cr<br>C=\dfrac{1}{c_0 Z_0}\sqrt{\varepsilon_r}<br>\end{cases}<br>$$</p>
+<p>则单位长度电感与单位长度电容只与<strong>走线的特性阻抗和介质的介电常数</strong>有关，而与介质厚度和线宽<span class="text-red">无关</span>。</p>
+<div align="center">
+<img style="width: 50%;" class="post-img b-lazy" data-img="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/传输线集总参数模型.png" data-index="12" data-src="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/传输线集总参数模型.png">
+</div> 
+
+<ul>
+<li>如图是理想传输线的集总参数模型。</li>
+</ul>
 
                 </article>
                 <ul class="tags-postTags">
+                    
+                    <li>
+                        <a href="/tags/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7/" rel="tag"># 信号完整性</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7/" rel="tag"># 电源完整性</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/tags/%E9%AB%98%E9%80%9FPCB/" rel="tag"># 高速PCB</a>
+                    </li>
                     
                 </ul>
             </div>
@@ -195,18 +246,14 @@
     
     <nav id="gobottom" class="pagination">
         
-        <a class="prev-post" title="LaTeX札记" href="/latex-notes/">
-            ← LaTeX札记
-        </a>
-        
         <span class="prev-next-post">·</span>
+        
+        <a class="next-post" title="NTU全过程Timeline" href="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/">
+            NTU全过程Timeline →
+        </a>
         
     </nav>
 
-    
-    <div class="inner">
-        <div id="comment"></div>
-    </div>
     
 </div>
 
@@ -224,7 +271,7 @@
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#20240805"><span class="toc-text">20240805</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20240813"><span class="toc-text">20240813</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20250117"><span class="toc-text">20250117</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89"><span class="toc-text">信号完整性与电源完整性揭秘（蓝皮书Notes）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81%E5%8F%82%E8%80%83%E5%B9%B3%E9%9D%A2%E5%92%8C%E8%BF%94%E5%9B%9E%E7%94%B5%E6%B5%81"><span class="toc-text">8、参考平面和返回电流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81%E4%BC%A0%E8%BE%93%E7%BA%BF%E5%BB%B6%E6%97%B6%E4%B8%8E%E6%A8%A1%E5%9E%8B"><span class="toc-text">9、传输线延时与模型</span></a></li></ol></li></ol>
     </div>
 </div>
 
@@ -259,13 +306,13 @@
       
       
       <li>
-        <a href="/posts/b928277e.html">信号完整性与电源完整性揭秘(蓝皮书Notes)</a>
+        <a href="/2026/06/12/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/">信号完整性与电源完整性揭秘(蓝皮书Notes)</a>
       </li>
       
       
       
       <li>
-        <a href="/posts/d46b59dc.html">NTU全过程Timeline</a>
+        <a href="/2026/06/07/NTU%E5%85%A8%E8%BF%87%E7%A8%8BTimeline/">NTU全过程Timeline</a>
       </li>
       
       
@@ -340,11 +387,6 @@
 			<a href="/" title="Xue Yuchen's Blog">Xue Yuchen's Blog © 2022-2026</a>
 			
 				
-			        <span hidden="true" id="/posts/44d56654.html" class="leancloud-visitors" data-flag-title="网站的小问题">
-			            <span>阅读量 </span>
-			            <span class="leancloud-visitors-count">0</span>
-			        </span>
-	    		
     		
 		</div>
 		<nav class="site-footer-nav">
@@ -383,7 +425,7 @@
         </a>
     </div>
     <span class="floating-header-divider">—</span>
-    <div class="floating-header-title">网站的小问题</div>
+    <div class="floating-header-title">信号完整性与电源完整性揭秘(蓝皮书Notes)</div>
     <progress class="progress" value="0">
         <span class="progress-container">
             <span class="progress-bar"></span>
@@ -426,23 +468,6 @@
 
 
 
-
-<script id="valineScript" src="https://unpkg.com/valine/dist/Valine.min.js" async=""></script>
-<script>
-    document.getElementById('valineScript').addEventListener("load", function() {
-        new Valine({
-            el: '#comment' ,
-            verify: false,
-            notify: false,
-            appId: 'aBRltWkLKGNezPSGs1TBA0GE-gzGzoHsz',
-            appKey: 'Tg0cJFUAcAbzFVaO5hwaRXsx',
-            placeholder: '这里是评论区。',
-            pageSize: 10,
-            avatar: 'mm',
-            visitor: true
-        })
-    });
-</script>
 
 
 
