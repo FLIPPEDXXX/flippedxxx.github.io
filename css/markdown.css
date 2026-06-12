@@ -104,6 +104,10 @@ em {
     margin: 0;
 }
 
+.markdown-body .MathJax_Display {
+    margin: 0.3em 0 !important;
+}
+
 .markdown-body a {
     color: #26A8ED;
     font-weight: 600;
