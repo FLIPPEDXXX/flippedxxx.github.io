@@ -430,3 +430,179 @@
     .timeline-read { color: #5e6468; }
     .timeline-end span { background: #2c2c2e; color: #787c82; }
 }
+
+@media (prefers-color-scheme: dark) {
+    .topic-tag, .topic-cat { background: #2c2c2e; border-color: #3a3a3e; color: #d0d0d0; }
+    .topic-tag:hover, .topic-cat:hover { border-color: #5eb8f0; color: #5eb8f0; }
+    .topic-tag .topic-count { background: rgba(94,184,240,0.14); color: #5eb8f0; }
+    .topic-cat .topic-count { color: #787c82; }
+}
+
+@media (prefers-color-scheme: dark) {
+    .tag-block { background: #2c2c2e; border-color: #3a3a3e; }
+    .tag-block-header { border-color: #3a3a3e; }
+    .tag-block-name { color: #5eb8f0; }
+    .tag-block-name:hover { color: #7ec8f6; }
+    .tag-block-count { background: rgba(94,184,240,0.12); color: #5eb8f0; }
+    .tag-post-item { color: #c0c0c0; border-color: #323236; }
+    .tag-post-item:hover { background: #323236; }
+    .tag-post-title { color: #d0d0d0; }
+    .tag-post-item:hover .tag-post-title { color: #5eb8f0; }
+    .tag-post-date { color: #6e7680; }
+}
+
+/* ===== Tags Cloud ===== */
+.topic-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 3em 0;
+    justify-content: center;
+}
+.topic-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.6em 1.2em;
+    background: #fff;
+    border: 1px solid #e0e5ea;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.08rem;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.topic-tag:hover {
+    border-color: #3eb0ef;
+    color: #3eb0ef;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(62,176,239,0.15);
+    text-decoration: none;
+}
+.topic-tag .topic-count {
+    background: rgba(62,176,239,0.12);
+    color: #3eb0ef;
+    padding: 0.15em 0.65em;
+    border-radius: 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+/* ===== Categories Card List ===== */
+.tag-block {
+    background: #fff;
+    border: 1px solid #e8ecf1;
+    border-radius: 14px;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.tag-block-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8em 1.2em;
+    border-bottom: 1px solid #f0f3f6;
+}
+.tag-block-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #3eb0ef;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.tag-block-name:hover { color: #2180b0; text-decoration: none; }
+.tag-block-count {
+    font-size: 1rem;
+    color: #3eb0ef;
+    background: rgba(62,176,239,0.08);
+    padding: 0.2em 0.8em;
+    border-radius: 12px;
+    font-weight: 600;
+}
+.tag-block-posts {
+    padding: 0.3em 0;
+}
+.tag-post-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65em 1.2em;
+    text-decoration: none;
+    color: #3c484e;
+    transition: background 0.15s;
+    border-bottom: 1px solid #f8f9fa;
+}
+.tag-post-item:last-child { border-bottom: none; }
+.tag-post-item:hover {
+    background: #f6f9fb;
+    text-decoration: none;
+}
+.tag-post-title {
+    font-size: 1.2rem;
+    color: #3c484e;
+}
+.tag-post-item:hover .tag-post-title { color: #3eb0ef; }
+.tag-post-date {
+    font-size: 0.95rem;
+    color: #aab5c0;
+    flex-shrink: 0;
+    margin-left: 1em;
+}
+
+/* ===== Mobile: Categories & Tags ===== */
+@media (max-width: 500px) {
+    .tag-block {
+        border-radius: 10px;
+        margin-bottom: 1em;
+    }
+    .tag-block-header {
+        padding: 0.6em 0.9em;
+    }
+    .tag-block-name {
+        font-size: 1.25rem;
+    }
+    .tag-block-count {
+        font-size: 0.85rem;
+        padding: 0.15em 0.6em;
+    }
+    .tag-post-item {
+        padding: 0.55em 0.9em;
+    }
+    .tag-post-title {
+        font-size: 1rem;
+    }
+    .tag-post-date {
+        font-size: 0.8rem;
+        margin-left: 0.6em;
+    }
+    .topic-cloud {
+        gap: 0.6em;
+        margin: 2em 0;
+    }
+    .topic-tag {
+        font-size: 0.95rem;
+        padding: 0.5em 0.9em;
+    }
+    .topic-tag .topic-count {
+        font-size: 0.7rem;
+    }
+}
+
+/* Dark mode for both */
+@media (prefers-color-scheme: dark) {
+    .topic-tag { background: #2c2c2e; border-color: #3a3a3e; color: #c0c0c0; }
+    .topic-tag:hover { border-color: #5eb8f0; color: #5eb8f0; box-shadow: 0 6px 18px rgba(94,184,240,0.18); }
+    .topic-tag .topic-count { background: rgba(94,184,240,0.14); color: #5eb8f0; }
+    .tag-block { background: #2c2c2e; border-color: #3a3a3e; }
+    .tag-block-header { border-color: #3a3a3e; }
+    .tag-block-name { color: #5eb8f0; }
+    .tag-block-name:hover { color: #7ec8f6; }
+    .tag-block-count { background: rgba(94,184,240,0.12); color: #5eb8f0; }
+    .tag-post-item { color: #c0c0c0; border-color: #323236; }
+    .tag-post-item:hover { background: #323236; }
+    .tag-post-title { color: #d0d0d0; }
+    .tag-post-item:hover .tag-post-title { color: #5eb8f0; }
+    .tag-post-date { color: #6e7680; }
+}
