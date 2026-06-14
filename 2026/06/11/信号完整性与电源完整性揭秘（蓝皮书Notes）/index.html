@@ -51,7 +51,7 @@
 
 	
 	
-	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606141539">
+	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606141648">
 
 	
 	
@@ -312,6 +312,31 @@ $$<br>
 &nbsp;<br>
 高频时我们关心的是电流会集中在导体表面内多深的范围内。<strong>电磁场场强振幅衰减到表面场强$1/e$的深度称为<span style="color: blue;">趋肤深度</span></strong>，以$\delta$表示。<br>
 $$\delta = \sqrt{\frac{1}{\pi f \mu \sigma }}$$</p>
+<p>直流电阻：$R_{DC} = \frac{1}{\sigma A}$<br>
+交流电阻：$R_{AC} = \frac{1}{\sigma \delta(f) p}$，其中$p$为横截面积周长。<br>
+则有$R_{AC} = \frac{R_0}{\sqrt{f_0}} \cdot \sqrt{f}$，$f_0$为远高于趋肤效应起作用的频点，<strong>则$R_{AC}$<span style="color: blue;">随频率的平方根变化</span><br>
+。</strong><br>
+&nbsp;<br>
+<span style="color: blue;">传导性损耗：</span>宽走线有利于减小传输线的损耗。频率越高损耗就会越大。<br>
+<span style="color: blue;">表面粗糙度：</span></p>
+<p>$$<br>
+\begin{cases}<br>
+\alpha <em>{rough} = K</em>{SR} \cdot \alpha <em>{smooth} \cr<br>
+K</em>{SR} = 1+\frac{2}{\pi}\arctan \left[1.4 (\frac{\Delta}{\delta} )^2\right]<br>
+\end{cases}<br>
+$$</p>
+<p>其中$\Delta$为表面粗糙度的RMS值，$\delta$为趋肤深度。<br>
+$$RMS \uparrow \rightarrow 越粗糙 \rightarrow K_{SR} \uparrow \rightarrow \alpha _{rough}  \uparrow$$</p>
+<h2 id="11、介质损耗">11、介质损耗</h2>
+<p>$$<br>
+\varepsilon = \frac{\varepsilon ‘}{\varepsilon_0}(1- j \frac{\varepsilon ‘’}{\varepsilon’})<br>
+$$<br>
+其中，$\frac{\varepsilon ‘’}{\varepsilon’}$用角度为$\delta$的正切$\tan (\delta)$表示，这即是<strong>损耗角正切</strong>。<br>
+$$<br>
+\varepsilon _r= Dk(1-j \cdot Df)<br>
+$$<br>
+有损传输线我们通常通过<span style="color: blue;">RLGC模型</span>建模。</p>
+<div align="center"><img style="width: 100%;" class="post-img b-lazy" data-img="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-16-21-43.png" data-index="17" data-src="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-16-21-43.png"></div>
 
                 </article>
                 <ul class="tags-postTags">
@@ -361,7 +386,7 @@ $$\delta = \sqrt{\frac{1}{\pi f \mu \sigma }}$$</p>
         </a>
     </div>
     <div class="toc-main">
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81%E5%8F%82%E8%80%83%E5%B9%B3%E9%9D%A2%E5%92%8C%E8%BF%94%E5%9B%9E%E7%94%B5%E6%B5%81"><span class="toc-text">8、参考平面和返回电流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E3%80%81%E4%BC%A0%E8%BE%93%E7%BA%BF%E5%BB%B6%E6%97%B6%E4%B8%8E%E6%A8%A1%E5%9E%8B"><span class="toc-text">9、传输线延时与模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10%E3%80%81%E6%9C%89%E6%8D%9F%E4%BC%A0%E8%BE%93%E7%BA%BF"><span class="toc-text">10、有损传输线</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#8%E3%80%81%E5%8F%82%E8%80%83%E5%B9%B3%E9%9D%A2%E5%92%8C%E8%BF%94%E5%9B%9E%E7%94%B5%E6%B5%81"><span class="toc-text">8、参考平面和返回电流</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9%E3%80%81%E4%BC%A0%E8%BE%93%E7%BA%BF%E5%BB%B6%E6%97%B6%E4%B8%8E%E6%A8%A1%E5%9E%8B"><span class="toc-text">9、传输线延时与模型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10%E3%80%81%E6%9C%89%E6%8D%9F%E4%BC%A0%E8%BE%93%E7%BA%BF"><span class="toc-text">10、有损传输线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11%E3%80%81%E4%BB%8B%E8%B4%A8%E6%8D%9F%E8%80%97"><span class="toc-text">11、介质损耗</span></a></li></ol>
     </div>
 </div>
 
