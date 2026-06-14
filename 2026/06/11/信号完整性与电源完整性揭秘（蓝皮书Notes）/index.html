@@ -51,7 +51,7 @@
 
 	
 	
-	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606141006">
+	<link rel="stylesheet" href="/css/allinonecss.min.css?v=202606141037">
 
 	
 	
@@ -264,7 +264,38 @@ Z_{in - open} = \frac{Z_0}{j \tan (\beta L)} \cr<br>
 Z_{in - short} = j Z_0 \tan (\beta L)<br>
 \end{cases}<br>
 $$</p>
-<p>其中，$\beta = \omega \sqrt{LC}$为理想传输线的传播常数，$l$为传输线的长度。</p>
+<p>其中，$\beta = \omega \sqrt{LC}$为理想传输线的<strong>传播常数</strong>，$l$为传输线的长度。</p>
+<div align="center"><img style="width: 50%;" class="post-img b-lazy" data-img="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-10-13-33.png" data-index="14" data-src="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-10-13-33.png"></div>
+<ul>
+<li>两条耦合的传输线之间存在互感与互容。假设3个工作状态：<br>
+1、 quiet：一条线上无电压和电流。<br>
+$$\begin{cases}<br>
+v_1 = L_0 \frac{d i_1}{dt} \cr<br>
+i_1 = (C_0 + C_m) \frac{d v_1}{dt}<br>
+\end{cases}<br>
+$$<br>
+2、 odd-mode：一条信号线上信号正跳变（上升沿），另一条信号线同时反向跳变（下降沿）。<br>
+$$\begin{cases}<br>
+v_1 = (L_0-L_m) \frac{d i_1}{dt} \cr<br>
+i_1 = (C_0 + 2C_m) \frac{d v_1}{dt}<br>
+\end{cases}<br>
+$$<br>
+3、even-mode：两条信号线上信号同时同向跳变（同为上升沿）。<br>
+$$\begin{cases}<br>
+v_1 = (L_0+L_m) \frac{d i_1}{dt} \cr<br>
+i_1 = C_0 \frac{d v_1}{dt}<br>
+\end{cases}<br>
+$$</li>
+</ul>
+<p>则$$\begin{cases}<br>
+Z_{quiet} = \sqrt{\frac{L_0}{C_0 + C_m}} \cr<br>
+Z_{odd} = \sqrt{\frac{L_0-L_m}{C_0 + 2C_m}} \cr<br>
+Z_{even} = \sqrt{\frac{L_0+L_m}{C_0 }}<br>
+\end{cases}<br>
+$$</p>
+<div align="center"><img style="width: 60%;" class="post-img b-lazy" data-img="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-10-30-05.png" data-index="15" data-src="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-10-30-05.png"></div>
+<div align="center"><img style="width: 60%;" class="post-img b-lazy" data-img="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-10-32-30.png" data-index="16" data-src="/2026/06/11/%E4%BF%A1%E5%8F%B7%E5%AE%8C%E6%95%B4%E6%80%A7%E4%B8%8E%E7%94%B5%E6%BA%90%E5%AE%8C%E6%95%B4%E6%80%A7%E6%8F%AD%E7%A7%98%EF%BC%88%E8%93%9D%E7%9A%AE%E4%B9%A6Notes%EF%BC%89/2026-06-14-10-32-30.png"></div>
+<p>同样，这些阻抗会随着线间距的变化而敏感变化，尤其是在内层走线中。</p>
 
                 </article>
                 <ul class="tags-postTags">
