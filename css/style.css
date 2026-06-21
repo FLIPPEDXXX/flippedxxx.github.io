@@ -119,7 +119,7 @@ img {
 
 .b-lazy.post-img {
     min-height: 200px;
-    min-width: 100%;
+    width: 100%;
     background: #C5D2D9 no-repeat 50% !important;
     background-size: cover;
     border-radius: 4px;
